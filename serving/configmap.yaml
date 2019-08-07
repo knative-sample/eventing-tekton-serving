@@ -15,7 +15,7 @@ data:
       resources:
         - name: git-source
           resourceRef:
-            name: eventing-tekton-serving
+            name: eventing-tekton-serving-git
       params:
         - name: pathToContext
           value: "src"
