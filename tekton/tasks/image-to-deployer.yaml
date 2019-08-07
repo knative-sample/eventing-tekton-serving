@@ -17,8 +17,8 @@ spec:
         default: "latest"
   steps:
     - name: deploy
-        image: "registry.cn-hangzhou.aliyuncs.com/knative-sample/deployer-deployer:7620096e"
-        args:
+      image: "registry.cn-hangzhou.aliyuncs.com/knative-sample/deployer-deployer:7620096e"
+      args:
         - "--namespace=default"
         - "--serivce-name=eventing-tekton-serving-sample"
         - "--image=${inputs.params.imageUrl}:${inputs.params.imageTag}"
