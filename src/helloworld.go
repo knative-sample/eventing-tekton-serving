@@ -14,7 +14,7 @@ type Log struct {
 
 func handler(w http.ResponseWriter, r *http.Request) {
 	l:= &Log{}
-	l.Info("Hello1 world received a request.")
+	l.Info("Hello14 world received a request.")
 	target := os.Getenv("TARGET")
 	if target == "" {
 		target = "World"
