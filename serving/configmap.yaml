@@ -27,4 +27,4 @@ data:
           value: "1.0"
       trigger:
         type: manual
-      serviceAccount: tekton
+      serviceAccount: pipeline-account
