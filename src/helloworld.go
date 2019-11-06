@@ -14,7 +14,7 @@ type Log struct {
 
 func handler(w http.ResponseWriter, r *http.Request) {
 	l:= &Log{}
-	l.Info("Hello1666663eeyy364 world received a request.")
+	l.Info("Hello world received a request.")
 	target := os.Getenv("TARGET")
 	if target == "" {
 		target = "World"
@@ -22,7 +22,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 	rand.Seed(time.Now().Unix())
 
-	fmt.Fprintf(w, "Hello123123123123123123123123123123123123 %s! Knative\n", target)
+	fmt.Fprintf(w, "Hello %s!\n", target)
 
 	if rand.Intn(10) < 4 {
 		l.Error("http handler error")
