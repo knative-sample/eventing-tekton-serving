@@ -22,7 +22,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 	rand.Seed(time.Now().Unix())
 
-	fmt.Fprintf(w, "GO %s!\n", target)
+	fmt.Fprintf(w, "Welcome %s!\n", target)
 
 	if rand.Intn(10) < 4 {
 		l.Error("http handler error")
